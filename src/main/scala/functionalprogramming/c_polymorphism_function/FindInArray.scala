@@ -1,4 +1,4 @@
-package functional.programing.example.polymorphismFunction
+package functional.c_polymorphism_function
 
 object FindInArray {
 

@@ -1,4 +1,4 @@
-package functional.programing.example.higherOrderFunction
+package functional.b_higher_order_function
 
 object Factorial {
 
