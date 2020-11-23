@@ -1,4 +1,4 @@
-package functional.a_pure_function
+package functionalprogramming.a_pure_function
 
 class Cafe {
 

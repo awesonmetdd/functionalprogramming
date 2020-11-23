@@ -1,4 +1,4 @@
-package functional.b_higher_order_function
+package functionalprogramming.b_higher_order_function
 
 object Factorial {
 

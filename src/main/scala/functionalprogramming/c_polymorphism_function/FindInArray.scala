@@ -1,4 +1,4 @@
-package functional.c_polymorphism_function
+package functionalprogramming.c_polymorphism_function
 
 object FindInArray {
 
@@ -25,7 +25,7 @@ object FindInArray {
   }
 
 
-  def compose[A, B, C](f: A => B, g: B => C): A => C = {
+  def andThen[A, B, C](f: A => B, g: B => C): A => C = {
     f andThen g
   }
 
