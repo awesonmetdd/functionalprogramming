@@ -11,11 +11,11 @@ class Cafe {
     cup
   }
 
-  //纯函数
-//  def buyCoffee(cc: CreditCard): (Coffee, Charge) = {
-//    val cup = Coffee()
-//    (cup, Charge(cc, cup.prize))
-//  }
+  // 纯函数
+  def _buyCoffee(cc: CreditCard): (Coffee, Charge) = {
+    val cup = Coffee()
+    (cup, Charge(cc, cup.prize))
+  }
 
 
   case class CreditCard() {

@@ -22,6 +22,9 @@ package functionalprogramming.d_pattern_matching
  *           | }
  *           val x: Int  3
  *
+ * 标准scala库中的List
+ * case Cons(x, Cons(2, Cons(4, _))) == case x::2::4::_ 右结合的
+ *
  */
 sealed trait List[+A]
 
