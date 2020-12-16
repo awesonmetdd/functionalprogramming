@@ -40,4 +40,30 @@ object ExceptionHandler {
     else xs.sum / xs.length
   }
 
+  /**
+   * 参考scala标准库中的Option和Either
+   */
+
+  /**
+   * Option可选返回
+   *
+   * @param xs
+   * @return
+   */
+  def mean(xs: Seq[Double]): Option[Double] =
+    if (xs.isEmpty) None
+    else Some(xs.sum / xs.length)
+
+  /**
+   * Either互斥并集, 习惯上Right构造器用于表示成功
+   *
+   * @param xs
+   * @return
+   */
+  def mean(xs: Seq[Double]): Either[String, Double] =
+    if (xs.isEmpty)
+      Left("xs is empty")
+    else
+      Right(xs.sum / xs.length)
+
 }
