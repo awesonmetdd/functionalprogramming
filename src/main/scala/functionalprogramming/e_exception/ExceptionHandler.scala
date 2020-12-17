@@ -50,7 +50,7 @@ object ExceptionHandler {
    * @param xs
    * @return
    */
-  def mean(xs: Seq[Double]): Option[Double] =
+  def meanA(xs: Seq[Double]): Option[Double] =
     if (xs.isEmpty) None
     else Some(xs.sum / xs.length)
 
@@ -60,7 +60,7 @@ object ExceptionHandler {
    * @param xs
    * @return
    */
-  def mean(xs: Seq[Double]): Either[String, Double] =
+  def meanB(xs: Seq[Double]): Either[String, Double] =
     if (xs.isEmpty)
       Left("xs is empty")
     else
